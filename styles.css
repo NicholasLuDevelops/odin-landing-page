@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 
 .container {
@@ -32,17 +33,28 @@ body {
 }
 
 .container.banner {
-    justify-content: space-around;
-    padding: 64px 0;
+    justify-content: center;
+    padding: 64px 32px;
+    gap: 64px;
 }
 
 .leftSide{
-    max-width: 500px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    max-width: 100px;
+    border-radius: 5px;
 }
 
 .mainText {
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: 900;
 }
+
 .main {
     flex: 1;
     flex-direction: column;
