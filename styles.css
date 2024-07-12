@@ -40,6 +40,7 @@ body {
 
 .middle {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     gap: 64px;
@@ -57,9 +58,38 @@ body {
     max-width: 200px;
 }
 
-.quote {
+.quoteContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    flex: 1;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-weight: 100;
+    font-style: italic;
+    max-width: 800px;
+}
+
+.quote, .quotee {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quotee {
+    align-self: flex-end;
+    font-weight: 800;
+}
+
+.middle, .quoteContainer, .bottom {
+    padding: 64px 32px;
 }
 
 .leftSide {
