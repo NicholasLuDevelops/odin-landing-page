@@ -47,8 +47,19 @@ body {
 
 .cards {
     display: flex;
-    justify-content: space-between;
-    gap: 64px;
+    gap: 128px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
 }
 
 .leftSide {
@@ -85,4 +96,8 @@ ul {
 
 img {
     max-width: 500px;
+}
+
+.card > img {
+    max-width: 200px;
 }
